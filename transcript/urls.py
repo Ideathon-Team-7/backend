@@ -1,7 +1,7 @@
-# transcript_downloader/urls.py
+# transcript/urls.py
 from django.urls import path
-from .views import download_script_json
+from .views import download_and_translate_script
 
 urlpatterns = [
-    path('download-script/', download_script_json, name='download_script'),
+    path('translate-scipt/', download_and_translate_script, name='download_and_translate_script'),
 ]
